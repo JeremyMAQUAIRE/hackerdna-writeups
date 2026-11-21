@@ -47,7 +47,6 @@ hackerdna-comptes-rendus/
 │
 ├── learn-101/
 │   ├── README.md
-│   └── images/
 │
 └── ...
 ```
