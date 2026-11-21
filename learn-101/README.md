@@ -41,7 +41,7 @@ J'ai commencé par ouvrir la page officielle du laboratoire afin de prendre conn
 
 📸 Capture d'écran :
 
-![Présentation du laboratoire](./images/etape-1.png)
+<img width="1455" height="167" alt="Capture d&#39;écran 2026-11-21 203530" src="https://github.com/user-attachments/assets/5d87f6df-4f2c-44c7-9cdc-3666c8904c60" />
 
 ### Étape 2 — Analyse des informations
 
@@ -51,7 +51,7 @@ Cette étape permet d'identifier les informations utiles et de progresser sans e
 
 📸 Capture d'écran :
 
-![Analyse du laboratoire](./images/etape-2.png)
+<img width="790" height="647" alt="Capture d&#39;écran 2026-11-21 203646" src="https://github.com/user-attachments/assets/c4cf497b-9af4-48c9-8ca1-d75fab8d2da6" />
 
 ### Étape 3 — Validation
 
@@ -61,7 +61,7 @@ Pour respecter les règles de HackerDNA, aucune valeur de flag n'est divulguée.
 
 📸 Capture d'écran :
 
-![Validation du laboratoire](./images/etape-3.png)
+<img width="2169" height="725" alt="Drapeau flouté sur page web" src="https://github.com/user-attachments/assets/590621f9-0106-4def-845d-c0029018e47d" />
 
 ---
 
