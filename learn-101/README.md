@@ -57,8 +57,6 @@ Cette étape permet d'identifier les informations utiles et de progresser sans e
 
 Après avoir suivi les instructions et réalisé les manipulations nécessaires, j'ai utilisé le système de validation du laboratoire.
 
-Pour respecter les règles de HackerDNA, aucune valeur de flag n'est divulguée.
-
 📸 Capture d'écran :
 
 <img width="2169" height="725" alt="Drapeau flouté sur page web" src="https://github.com/user-attachments/assets/590621f9-0106-4def-845d-c0029018e47d" />
