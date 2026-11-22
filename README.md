@@ -8,7 +8,7 @@
 
 ![Langue](https://img.shields.io/badge/Langue-Fran%C3%A7ais-blue)
 ![Plateforme](https://img.shields.io/badge/Plateforme-HackerDNA-purple)
-![Progression](https://img.shields.io/badge/Laboratoires-01-green)
+![Progression](https://img.shields.io/badge/Laboratoires-03-green)
 
 ---
 
@@ -34,6 +34,7 @@ Retrouvez ici tous les laboratoires réalisés.
 |:---:|---|---|:---:|
 | 01 | Learn 101         | [📖 Consulter](./learn-101/README.md) | 🇫🇷 Français |
 | 02 | Secrets in Source | [📖 Consulter](./secrets_in_source/README.md) | 🇫🇷 Français |
+| 03 | Secrets in Source 2 | [📖 Consulter](./secrets_in_source_2/README.md) | 🇫🇷 Français |
 
 > 📌 Cette table sera mise à jour au fur et à mesure de ma progression.
 
@@ -50,6 +51,9 @@ hackerdna-comptes-rendus/
 │   ├── README.md
 |
 ├── secrets_in_source/
+│   ├── README.md
+│
+├── secrets_in_source_2/
 │   ├── README.md
 └── ...
 ```
@@ -90,6 +94,7 @@ L'objectif est d'expliquer les démarches et les concepts sans divulguer les ré
 - 🌐 [Plateforme HackerDNA](https://hackerdna.com)
 - 🧪 [Laboratoire 1 — Learn 101](https://hackerdna.com/labs/learn-101)
 - 🔐 [Laboratoire 2 — Secrets in Source](https://hackerdna.com/fr/labs/secrets-in-source)
+- 🔐 [Laboratoire 3 — Secrets in Source 2](https://hackerdna.com/labs/secrets-in-source-2)
 
 ---
 
