@@ -88,7 +88,8 @@ L'objectif est d'expliquer les démarches et les concepts sans divulguer les ré
 ## 🔗 Liens utiles
 
 - 🌐 [Plateforme HackerDNA](https://hackerdna.com)
-- 🧪 [Premier laboratoire — Learn 101](https://hackerdna.com/labs/learn-101)
+- 🧪 [Laboratoire 1 — Learn 101](https://hackerdna.com/labs/learn-101)
+- 🔐 [Laboratoire 2 — Secrets in Source](https://hackerdna.com/fr/labs/secrets-in-source)
 
 ---
 
