@@ -32,7 +32,8 @@ Retrouvez ici tous les laboratoires réalisés.
 
 | N° | 🧪 Laboratoire | 📝 Compte rendu | 🌐 Langue |
 |:---:|---|---|:---:|
-| 01 | Learn 101 | [📖 Consulter](./learn-101/README.md) | 🇫🇷 Français |
+| 01 | Learn 101         | [📖 Consulter](./learn-101/README.md) | 🇫🇷 Français |
+| 02 | Secrets in Source | [📖 Consulter](./secrets_in_source/README.md) | 🇫🇷 Français |
 
 > 📌 Cette table sera mise à jour au fur et à mesure de ma progression.
 
