@@ -1,114 +1,28 @@
+# HackerDNA — Mes writeups
 
-<div align="center">
+Je regroupe ici les labs HackerDNA que j'ai terminés, avec les manipulations que j'ai faites et ce que j'en ai retenu.
 
-# 🛡️ HackerDNA
-### 📚 Mes comptes rendus de cybersécurité
+Je m'intéresse surtout à la sécurité web pour le moment. L'idée n'est pas de recopier les solutions, mais de garder une trace de mon raisonnement : où j'ai cherché, quel indice m'a mis sur la piste et pourquoi la faille existe.
 
-**Apprentissage • Cybersécurité • Piratage éthique • Résolution de défis**
+Je laisse volontairement de côté les flags, mots de passe et chemins secrets. Si vous voulez tenter un lab, vous pouvez donc lire ces notes sans vous faire dévoiler sa réponse.
 
-![Langue](https://img.shields.io/badge/Langue-Fran%C3%A7ais-blue)
-![Plateforme](https://img.shields.io/badge/Plateforme-HackerDNA-purple)
-![Progression](https://img.shields.io/badge/Laboratoires-04-green)
+## Les labs
 
----
+| # | Lab | Writeup | Lab HackerDNA |
+|---|---|---|---|
+| 01 | Learn 101 | [Lire](./learn-101/README.md) | [Ouvrir](https://hackerdna.com/labs/learn-101) |
+| 02 | Secrets in Source | [Lire](./secrets_in_source/README.md) | [Ouvrir](https://hackerdna.com/labs/secrets-in-source) |
+| 03 | Secrets in Source 2 | [Lire](./secrets_in_source_2/README.md) | [Ouvrir](https://hackerdna.com/labs/secrets-in-source-2) |
+| 04 | Hack the Login | [Lire](./hack_the_login/README.md) | [Ouvrir](https://hackerdna.com/labs/hack-the-login) |
 
-Bienvenue dans mon espace dédié à l'apprentissage de la cybersécurité à travers les laboratoires proposés par **[HackerDNA](https://hackerdna.com)**.
+## Ce que je retiens pour l'instant
 
-</div>
+Les premiers exercices m'ont montré qu'il ne faut pas forcément un outil compliqué pour repérer un problème. Parfois, regarder le HTML ou un fichier JavaScript suffit à comprendre ce qui ne va pas.
 
-## 🎯 Présentation
+Il y a aussi une différence importante entre cacher quelque chose dans l'interface et réellement le protéger sur le serveur. C'est un point qui revient dans plusieurs de ces labs.
 
-Ce dépôt regroupe l'ensemble de mes comptes rendus réalisés sur la plateforme HackerDNA.
-
-Chaque laboratoire représente une nouvelle occasion de découvrir des techniques, d'expérimenter des outils et de développer mes compétences en sécurité informatique.
-
-Mon objectif est de documenter ma progression et de partager une approche pédagogique de chaque exercice.
-
----
-
-## 📚 Table des matières
-
-Retrouvez ici tous les laboratoires réalisés.
-
-| N° | 🧪 Laboratoire | 📝 Compte rendu | 🌐 Langue |
-|:---:|---|---|:---:|
-| 01 | Learn 101         | [📖 Consulter](./learn-101/README.md) | 🇫🇷 Français |
-| 02 | Secrets in Source | [📖 Consulter](./secrets_in_source/README.md) | 🇫🇷 Français |
-| 03 | Secrets in Source 2 | [📖 Consulter](./secrets_in_source_2/README.md) | 🇫🇷 Français |
-| 04 | Hack the Login | [📖 Consulter](./hack_the_login/README.md) | 🇫🇷 Français |
-
-> 📌 Cette table sera mise à jour au fur et à mesure de ma progression.
+Je compléterai ce dépôt au fil des exercices, en gardant des explications simples et des exemples utiles.
 
 ---
 
-## 📂 Organisation du dépôt
-
-```text
-hackerdna-comptes-rendus/
-│
-├── README.md
-│
-├── learn-101/
-│   ├── README.md
-|
-├── secrets_in_source/
-│   ├── README.md
-│
-├── secrets_in_source_2/
-│   ├── README.md
-│
-├── hack_the_login/
-│   ├── README.md
-└── ...
-```
-
-Chaque laboratoire possède son propre dossier contenant :
-
-- 📖 Une présentation du défi.
-- 🔎 La méthodologie utilisée.
-- 🛠️ Les outils et techniques employés.
-- 📸 Des captures d'écran explicatives.
-- 💡 Les connaissances acquises.
-
----
-
-## 🚀 Mes objectifs
-
-- 🔐 Comprendre les fondamentaux de la cybersécurité.
-- 💻 Développer mes compétences techniques.
-- 🧠 Améliorer mon raisonnement et ma méthodologie.
-- 🛠️ Découvrir les outils de sécurité informatique.
-- 📚 Constituer une documentation de mes apprentissages.
-- 🤝 Partager mes connaissances avec la communauté.
-
----
-
-## ⚠️ Avertissement
-
-Les laboratoires présentés sont réalisés dans des environnements autorisés, uniquement à des fins pédagogiques.
-
-**Aucun flag, mot de passe ou élément sensible n'est publié.**
-
-L'objectif est d'expliquer les démarches et les concepts sans divulguer les réponses aux défis.
-
----
-
-## 🔗 Liens utiles
-
-- 🌐 [Plateforme HackerDNA](https://hackerdna.com)
-- 🧪 [Laboratoire 1 — Learn 101](https://hackerdna.com/labs/learn-101)
-- 🔐 [Laboratoire 2 — Secrets in Source](https://hackerdna.com/fr/labs/secrets-in-source)
-- 🔐 [Laboratoire 3 — Secrets in Source 2](https://hackerdna.com/labs/secrets-in-source-2)
-- 🔐 [Laboratoire 4 — Hack the Login](https://hackerdna.com/labs/hack-the-login)
-
----
-
-<div align="center">
-
-### 🛡️ Apprendre • Pratiquer • Progresser
-
-*Chaque laboratoire est une nouvelle étape dans mon apprentissage de la cybersécurité.*
-
-⭐ **Dépôt mis à jour au fil de mes découvertes.**
-
-</div>
+Ces tests sont réalisés sur les environnements prévus par [HackerDNA](https://hackerdna.com), dans un cadre d'apprentissage. Aucun flag ni secret de lab n'est publié.
