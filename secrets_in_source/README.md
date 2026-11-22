@@ -9,7 +9,7 @@
 Ce write-up présente la résolution du laboratoire **Secrets in Source** proposé par HackerDNA.
 
 - **Plateforme :** [HackerDNA](https://hackerdna.com)
-- **Challenge :** [Secrets in Source](https://hackerdna.com/fr/labs/secrets-in-source)
+- **Challenge :** [Secrets in Source](https://hackerdna.com/labs/secrets-in-source)
 - **Lien direct :** https://hackerdna.com/fr/labs/secrets-in-source
 - **Catégorie :** Web Security
 - **Statut :** ✅ Résolu
