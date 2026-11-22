@@ -1,138 +1,37 @@
-# 🔐 HackerDNA — 2. Secrets in Source
+# Secrets in Source
 
-![Category](https://img.shields.io/badge/Catégorie-Web%20Security-blue)
-![Difficulty](https://img.shields.io/badge/Difficulté-Débutant-green)
-![Status](https://img.shields.io/badge/Statut-Résolu-brightgreen)
+**Lab :** [Secrets in Source sur HackerDNA](https://hackerdna.com/labs/secrets-in-source)  
+**Catégorie :** Sécurité web  
+**Résultat :** Lab terminé
 
-## 📋 Présentation
+## Un indice dans le code HTML
 
-Ce write-up présente la résolution du laboratoire **Secrets in Source** proposé par HackerDNA.
+Le lab présente un site vitrine fictif, **TechNova Solutions**. Au premier abord, rien de très particulier : on peut naviguer sur le site et lire son contenu.
 
-- **Plateforme :** [HackerDNA](https://hackerdna.com)
-- **Challenge :** [Secrets in Source](https://hackerdna.com/labs/secrets-in-source)
-- **Lien direct :** https://hackerdna.com/labs/secrets-in-source
-- **Catégorie :** Web Security
-- **Statut :** ✅ Résolu
+Dans la partie contact, un indice invite à regarder « sous le capot ». J'ai donc ouvert le code source de la page avec **Ctrl + U** dans Chrome.
 
-> ⚠️ Les informations sensibles, chemins secrets et flags sont volontairement masqués.
+En parcourant le HTML, je suis tombé sur des commentaires laissés par les développeurs, vers les lignes 105 et 106. L'un d'eux évoquait un fichier qui aurait dû être déplacé vers un emplacement plus sûr.
 
-## 🎯 Objectif
+Je ne reproduis pas le commentaire complet, puisqu'il contient le chemin utilisé pour résoudre le défi. Ce qui compte ici, c'est qu'un simple commentaire HTML révélait l'existence d'un fichier sensible.
 
-Le laboratoire met à disposition un site vitrine fictif nommé **TechNova Solutions**.
+## Vérifier l'indice
 
-L'objectif est d'analyser les ressources accessibles depuis le navigateur afin de retrouver une information sensible oubliée par un développeur.
+À partir du chemin indiqué dans le commentaire, j'ai testé l'accès à la ressource dans la barre d'adresse du navigateur.
 
-## 🔎 Étape 1 — Reconnaissance
+Le fichier était accessible directement, sans demande d'authentification. J'ai ainsi pu terminer le lab.
 
-Après avoir ouvert l'application web, j'ai commencé par examiner les différentes sections du site.
+Je ne mets ni l'URL complète du fichier ni son contenu pour laisser la possibilité de chercher par soi-même.
 
-La section de contact contient un indice invitant à regarder ce qui se trouve « sous le capot » du site.
+## Pourquoi c'est un problème
 
-J'ai donc décidé d'inspecter le code source HTML.
+Un commentaire HTML n'apparaît pas sur la page telle qu'on la voit normalement, mais il est envoyé au navigateur avec le reste du code. N'importe quel visiteur peut donc le consulter.
 
-### Affichage du code source
+Ici, deux choses se cumulaient : un commentaire révélait où chercher et le serveur laissait accéder au fichier.
 
-Dans Google Chrome, j'ai utilisé le raccourci :
+Sur un vrai site, il faudrait éviter de laisser des chemins sensibles dans le HTML et surtout empêcher l'accès public aux fichiers qui ne doivent pas l'être. Supprimer le commentaire ne suffirait pas à sécuriser la ressource.
 
-```text
-Ctrl + U
-```
+## Ce que je retiens
 
-Cette manipulation permet d'afficher le code HTML envoyé par le serveur.
+Ce lab m'a montré l'intérêt de commencer par des vérifications simples. Pas besoin d'un scanner ou d'un outil complexe : le code source et la barre d'adresse ont suffi.
 
-## 🧩 Étape 2 — Analyse du code HTML
-
-En parcourant le code source, j'ai remarqué deux commentaires HTML intéressants vers les lignes 105 et 106.
-
-```html
-<!-- Dev note: launch checklist passed, marketing copy approved. -->
-<!-- TODO: move the flag "/[REDACTED]/flag.txt" to a more secure location -->
-```
-
-Le second commentaire révèle qu'un fichier nommé `flag.txt` est présent sur le serveur.
-
-Son emplacement est directement indiqué dans le code source, ce qui constitue une divulgation d'information.
-
-## 🚀 Étape 3 — Accès au fichier
-
-À partir du chemin découvert dans le commentaire HTML, j'ai construit une URL en ajoutant ce chemin à l'adresse du laboratoire.
-
-```text
-https://lab.hdna.me/4-secrets-in-source/[REDACTED]/flag.txt
-```
-
-J'ai ensuite ouvert cette adresse directement dans le navigateur.
-
-Le serveur a retourné le contenu du fichier texte sans demander d'authentification.
-
-## 🏁 Étape 4 — Récupération du flag
-
-Le fichier contenait une valeur correspondant au flag attendu par le laboratoire.
-
-```text
-FLAG: [REDACTED]
-```
-
-Le flag a été récupéré avec succès.
-
-> 🔒 Le flag réel n'est pas publié afin de préserver l'intérêt pédagogique du challenge.
-
-## 🛡️ Analyse de la vulnérabilité
-
-### Type de vulnérabilité
-
-**Information Disclosure — Divulgation d'informations sensibles**
-
-Deux problèmes sont identifiables :
-
-1. **Commentaire HTML sensible :** un développeur a laissé dans le code source un commentaire révélant l'emplacement d'un fichier.
-2. **Fichier publiquement accessible :** le fichier contenant le flag peut être consulté sans authentification.
-
-### Pourquoi est-ce dangereux ?
-
-Les commentaires HTML ne sont pas affichés directement sur la page, mais ils sont accessibles à tous les visiteurs qui consultent son code source.
-
-Ils peuvent révéler des chemins internes, des fichiers confidentiels ou des informations utiles à un attaquant.
-
-### Recommandations
-
-- Supprimer les commentaires sensibles avant la mise en production.
-- Ne jamais stocker de secrets dans les fichiers publics.
-- Placer les ressources confidentielles hors du répertoire web accessible.
-- Mettre en place des contrôles d'accès adaptés.
-- Vérifier les fichiers exposés lors des audits de sécurité.
-
-## 🧰 Outils utilisés
-
-| Outil | Utilisation |
-|---|---|
-| Google Chrome | Navigation sur le site |
-| Ctrl + U | Affichage du code source |
-| Analyse HTML | Identification des commentaires |
-| Barre d'adresse | Accès au fichier découvert |
-
-## 📚 Ce que j'ai appris
-
-Ce laboratoire m'a permis de comprendre :
-
-- L'importance de consulter le code source HTML.
-- Les risques liés aux commentaires laissés par les développeurs.
-- La manière dont un chemin exposé peut conduire à un fichier sensible.
-- L'importance de protéger les ressources côté serveur.
-
-## ✅ Conclusion
-
-Le challenge **Secrets in Source** démontre qu'une simple analyse du code HTML peut permettre de découvrir des informations sensibles.
-
-Aucun outil complexe n'a été nécessaire : le navigateur, l'affichage du code source et l'analyse des commentaires ont suffi.
-
-**Statut : Challenge résolu ✅**
-
----
-
-**Auteur :** [JeremyMAQUAIRE](https://github.com/JeremyMAQUAIRE)
-
-**Repository :** [hackerdna-writeups](https://github.com/JeremyMAQUAIRE/hackerdna-writeups)
-
-> Documentation réalisée dans un cadre pédagogique et de cybersécurité éthique.
-
+[Retour à la liste des labs](../README.md)
