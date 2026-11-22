@@ -8,11 +8,11 @@
 
 Ce write-up présente la résolution du laboratoire **Secrets in Source** proposé par HackerDNA.
 
-- **Plateforme :** HackerDNA
-- **Challenge :** 2 — Secrets in Source
-- **Catégorie :** Sécurité Web
-- **Vulnérabilité :** Information Disclosure
-- **Objectif :** Retrouver un flag caché dans les ressources d'un site web.
+- **Plateforme :** [HackerDNA](https://hackerdna.com)
+- **Challenge :** [Secrets in Source](https://hackerdna.com/fr/labs/secrets-in-source)
+- **Lien direct :** https://hackerdna.com/fr/labs/secrets-in-source
+- **Catégorie :** Web Security
+- **Statut :** ✅ Résolu
 
 > ⚠️ Les informations sensibles, chemins secrets et flags sont volontairement masqués.
 
